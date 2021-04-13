@@ -24,7 +24,7 @@ echo 'resources' >> .gitignore
 テーマ設定
 
 ```shell
-git submodule add git@github.com:balaramadurai/hugo-travelify-theme.git themes/traverify
+git submodule add https://github.com/balaramadurai/hugo-travelify-theme.git themes/traverify
 ```
 
 サイト設定
