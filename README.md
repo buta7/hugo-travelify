@@ -30,8 +30,7 @@ git submodule add https://github.com/balaramadurai/hugo-travelify-theme.git them
 サイト設定
 g
 ```shell
-cp -pr themes/hugo-traverify/exampleSite/{content,config.toml} .
-cp -pr themes/hugo-traverify/archetypes .
+cp -pr themes/hugo-traverify/exampleSite/{content,static,config.toml} .
 ```
 
 config.toml
@@ -60,15 +59,15 @@ git push -u origin main
 ## Github Actionsの利用
 
 * .github/workflows/gh-pages.yamlを作成
-    * ソースはmainブランチ
-    * 出力はpublicフォルダの内容をgh-pagesブランチ
-        * Github>Settings>Gighub Pages>Source>gh-pages branch
+  * ソースはmainブランチ
+  * 出力はpublicフォルダの内容をgh-pagesブランチ
+    * Github>Settings>Gighub Pages>Source>gh-pages branch
 
 ## 既存のレポジトリからクローンする場合
 
 ```shell
-git clone git@github.com:buta7/hugo-traverify.git buta7-traverify
-cd buta7-traverify
+git clone git@github.com:buta7/hugo-traverify.git hugo-traverify
+cd hugo-traverify
 git submodule update --init --recursive
 ```
 
